@@ -1,5 +1,4 @@
 import java.util.*;
-
 class DijkstraAlgorithm {
 	static final int V = 6;
 	int minDistance(int dist[], Boolean sptSet[])
@@ -36,18 +35,17 @@ class DijkstraAlgorithm {
 			if (!sptSet[v] && graph[u][v] != 0 && dist[u] != Integer.MAX_VALUE && dist[u] + graph[u][v] < dist[v])
 					dist[v] = dist[u] + graph[u][v];
 		}
-
 		printSolution(dist);
 	}
 
 	public static void main(String[] args)
 	{
 		int graph[][] = new int[][] {{ 0, 2, 0, 6, 20, 10 },
-									{ 0, 0, 10, 0, 0, 0 },
-									{ 0, 0, 0, 0, 2, 0 },
-									{ 0, 0, 4, 0, 12, 0 },
-									{ 0, 0, 0, 0, 0, 0 },
-									{ 0, 0, 0, 0, 9, 0} };
+					     { 0, 0, 10, 0, 0, 0 },
+					     { 0, 0, 0, 0, 2, 0 },
+					     { 0, 0, 4, 0, 12, 0 },
+					     { 0, 0, 0, 0, 0, 0 },
+					     { 0, 0, 0, 0, 9, 0} };
 		DijkstraAlgorithm obj = new DijkstraAlgorithm();
 		obj.dijkstra(graph, 0);
 	}
