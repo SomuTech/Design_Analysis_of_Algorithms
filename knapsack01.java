@@ -1,15 +1,10 @@
-
+import java.util.*;
 class Knapsack01
 {
     static int knapsack(int cap,int[] wt,int[] val,int n)
     {
         int k[][]=new int[n+1][cap+1];
-        for(int i=0; i<n+1; i++){
-            for(int j=0;j<cap+1; j++){
-                k[i][j]=0;
-            }
-        }
-        //
+        //implementation
         for(int r=0; r<n+1; r++){
             for(int c=0; c<cap+1; c++)
             {
