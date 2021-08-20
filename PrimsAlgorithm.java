@@ -50,3 +50,12 @@ class PrimsAlgorithm {
 		obj.primMST(graph,5);
 	}
 }
+
+/*OUTPUT
+Edge    Weight
+0 - 1   2
+1 - 2   3
+0 - 3   6
+1 - 4   5
+cost of minimum spanning tree:16
+*/
