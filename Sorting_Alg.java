@@ -132,3 +132,18 @@ public class Sorting_Alg
 			System.out.print(i+",");
 	}
 }
+
+/*OUTPUT
+best case of quick
+4345600,3995400,3987500,1100600,1056100,
+best case of merge
+294200,264100,249000,190900,205300,
+avg case of quick
+10379100,4663900,3626900,1087800,1095100,
+avg case of merge
+1675700,459000,311200,343500,284800,
+worst case of quick
+4398500,4435200,4080900,1088200,1051700,
+worst case of merge
+370000,296100,235400,198800,203500,
+*/
