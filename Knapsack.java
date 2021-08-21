@@ -51,7 +51,7 @@ public class Knapsack
     {
         int w[]={18,15,10},v[]={25,24,15};
         int ca=20;
-        System.out.println("minimum cost:"+Knapsack.snap(v,w,ca,3));
+        System.out.println("maximum cost:"+Knapsack.snap(v,w,ca,3));
     }
 }
 
@@ -71,5 +71,5 @@ item    weight  value   v/w
 4       30      150     5.0
 3       40      100     2.0
 1       10      20      2.0
-minimum cost:492
+maximum cost:492
   */
